@@ -1,25 +1,31 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Ceaser cipher</h1>
-    <div class="wrapper">
+    <div class="container">
+        <h1>Caesar Cipher</h1>
 
-        <div>
-            <textarea name="" id="textarea" placeholder="Type someting..."></textarea>
+        <div class="box">
+            <h2>Encryption</h2>
+            <textarea id="encryptText" placeholder="Enter text to encrypt..."></textarea>
+            <button id="encryptBtn">Encrypt</button>
+            <div class="output" id="encryptResult"></div>
         </div>
 
-
-        <button id="btn"> click to generate</button>
+        <div class="box">
+            <h2>Decryption</h2>
+            <textarea id="decryptText" placeholder="Enter text to decrypt..."></textarea>
+            <button id="decryptBtn">Decrypt</button>
+            <div class="output" id="decryptResult"></div>
+        </div>
     </div>
-    <div class="result"></div>
-
 
     <script src="script.js"></script>
 </body>

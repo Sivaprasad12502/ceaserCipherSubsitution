@@ -1,56 +1,74 @@
-body{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-        149deg,
-        #192247 0%,
-        #210e17 99.08%
-    );
-    flex-direction: column;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-h1{
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
     color: white;
 }
-.wrapper{
-    background-color: rgb(45, 45, 45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border-radius: 5px;
-}
-textarea{
-    border: none;
-    background: none;
-    font-size: 1rem;
-    color: white;
-    outline: none;
+
+.container {
     text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.box {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+textarea {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-
-}
-button{
-    border: none;
-    background-color: red;
-    color: white;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
-    padding: 5px;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-
+    border: none;
+    font-size: 16px;
+    resize: none;
 }
-.result{
-    margin-top: 2rem;
+
+button {
+    padding: 10px 20px;
+    background: #4CAF50;
     color: white;
-    word-break: break-all;
-    font-size: 20px;
-    padding: 1rem;
-    font-weight: 900;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.output {
+    margin-top: 10px;
+    padding: 10px;
+    background: #444;
+    min-height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+    word-wrap: break-word;
 }
